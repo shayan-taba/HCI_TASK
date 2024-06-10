@@ -84,7 +84,7 @@ def reiterateChecker(HIGH_COUNTER):
 
     print(output)
 
-    if "Your blood pressure is high" in output:
+    if "Your blood pressure is high" in output: # only triggers if blood pressure is high, but not high for five consecutive occasoins
         HIGH_COUNTER += 1
         reiterateChecker(HIGH_COUNTER)
 
