@@ -20,7 +20,7 @@ MAXIMUM_DIASTOLIC = 150  # This is the maximum (inclusive) SYSTOLIC pressure in 
 
 
 # Function to validate if input is a valid integer, but does not consider the numerical range of accepted values
-def validate_input(prompt):
+def validateInput(prompt):
     while True:
         user_input = input(prompt)
         if user_input.isnumeric():
@@ -31,10 +31,10 @@ def validate_input(prompt):
 
 def getInput():
     # Input SYSTOLIC and DIASTOLIC blood pressure values from the user
-    SYSTOLIC = validate_input(
+    SYSTOLIC = validateInput(
         "Enter your top number (SYSTOLIC blood pressure in mm Hg: "
     )
-    DIASTOLIC = validate_input(
+    DIASTOLIC = validateInput(
         "Enter your bottom number (DIASTOLIC) blood pressure in mm Hg: "
     )
 
